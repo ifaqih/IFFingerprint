@@ -1,5 +1,10 @@
 # 🔐 IFFingerprint
 
+[![npm version](https://img.shields.io/npm/v/iffingerprint.svg?style=flat)](https://www.npmjs.com/package/iffingerprint)
+[![npm downloads](https://img.shields.io/npm/dm/iffingerprint.svg?style=flat)](https://www.npmjs.com/package/iffingerprint)
+[![npm license](https://img.shields.io/npm/l/iffingerprint.svg?style=flat)](https://github.com/ifaqih/iffingerprint/blob/main/LICENSE)
+[![npm bundle size](https://img.shields.io/bundlephobia/min/iffingerprint.svg?style=flat)](https://www.npmjs.com/package/iffingerprint)
+
 **Library Fingerprinting Browser dengan Akurasi Tinggi untuk JavaScript/TypeScript**
 
 IFFingerprint adalah library fingerprinting browser yang komprehensif dan ringan, dirancang untuk mengidentifikasi pengguna browser secara unik dengan akurasi 90-100%. Library ini menggunakan berbagai teknik fingerprinting modern tanpa bergantung pada library eksternal.
