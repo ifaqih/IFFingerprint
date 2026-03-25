@@ -1,0 +1,1 @@
+{"version":3,"file":"TimezoneCollector.d.ts","sourceRoot":"","sources":["../../src/collectors/TimezoneCollector.ts"],"names":[],"mappings":"AAAA;;;GAGG;AAEH,OAAO,EAAE,YAAY,EAAE,MAAM,UAAU,CAAC;AAExC,qBAAa,iBAAiB;IAC5B,IAAI,SAAc;IAClB,OAAO,UAAQ;IAEf,OAAO,IAAI,YAAY;IAkBvB,OAAO,CAAC,eAAe;IAQvB,OAAO,CAAC,uBAAuB;IAa/B,OAAO,CAAC,KAAK;CAiBd"}

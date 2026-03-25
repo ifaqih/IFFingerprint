@@ -1,0 +1,1 @@
+{"version":3,"file":"WebGLCollector.d.ts","sourceRoot":"","sources":["../../src/collectors/WebGLCollector.ts"],"names":[],"mappings":"AAAA;;;GAGG;AAEH,OAAO,EAAE,SAAS,EAAmB,MAAM,UAAU,CAAC;AAGtD,qBAAa,cAAc;IACzB,IAAI,SAAW;IACf,OAAO,UAAQ;IAGf,OAAO,CAAC,gBAAgB,CAA2B;IAE7C,OAAO,IAAI,OAAO,CAAC,SAAS,CAAC;IAsGnC,OAAO,CAAC,YAAY;IAapB,OAAO,CAAC,iBAAiB;CA6C1B"}

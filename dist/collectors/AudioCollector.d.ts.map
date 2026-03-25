@@ -1,0 +1,1 @@
+{"version":3,"file":"AudioCollector.d.ts","sourceRoot":"","sources":["../../src/collectors/AudioCollector.ts"],"names":[],"mappings":"AAAA;;;;GAIG;AAEH,OAAO,EAAE,SAAS,EAAE,MAAM,UAAU,CAAC;AAGrC,qBAAa,cAAc;IACzB,IAAI,SAAW;IACf,OAAO,UAAQ;IAET,OAAO,IAAI,OAAO,CAAC,SAAS,CAAC;CA4EpC"}

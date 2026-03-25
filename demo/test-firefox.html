@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IFFingerprint - Firefox Accuracy Test</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .test-section {
+        margin: 1rem 0;
+        padding: 1rem;
+        background: #f0f0f0;
+        border-radius: 8px;
+      }
+      .test-result {
+        margin: 0.5rem 0;
+        padding: 0.5rem;
+        background: white;
+        border-radius: 4px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .test-result.pass {
+        border-left: 4px solid #10b981;
+      }
+      .test-result.fail {
+        border-left: 4px solid #ef4444;
+      }
+      .test-result.warn {
+        border-left: 4px solid #f59e0b;
+      }
+      .status-badge {
+        padding: 0.25rem 0.5rem;
+        border-radius: 4px;
+        font-size: 0.75rem;
+        font-weight: 600;
+      }
+      .status-badge.pass {
+        background: #d1fae5;
+        color: #065f46;
+      }
+      .status-badge.fail {
+        background: #fee2e2;
+        color: #991b1b;
+      }
+      .status-badge.warn {
+        background: #fef3c7;
+        color: #92400e;
+      }
+
+      .accuracy-meter {
+        height: 20px;
+        background: #e5e7eb;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 1rem 0;
+      }
+      .accuracy-fill {
+        height: 100%;
+        background: linear-gradient(90deg, #ef4444, #f59e0b, #10b981);
+        transition: width 0.5s ease;
+      }
+      .firefox-protection-notice {
+        background: #fef3c7;
+        border: 1px solid #f59e0b;
+        padding: 1rem;
+        border-radius: 8px;
+        margin: 1rem 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>🦊 Firefox Accuracy Test</h1>
+        <p>Testing IFFingerprint accuracy on Firefox</p>
+      </header>
+
+      <!-- Firefox Protection Notice -->
+      <div
+        class="firefox-protection-notice"
+        id="protectionNotice"
+        style="display: none"
+      >
+        <strong>⚠️ Firefox Protection Detected!</strong>
+        <p>
+          Firefox memiliki fitur anti-fingerprinting yang dapat mempengaruhi
+          akurasi.
+        </p>
+      </div>
+
+      <!-- Main Fingerprint Card -->
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title">Current Fingerprint</h2>
+          <span class="card-badge" id="versionBadge">v1.0.0</span>
+        </div>
+
+        <div class="fingerprint-display" id="fingerprintDisplay">
+          ?????????????????????????????????
+        </div>
+
+        <div
+          class="btn-group"
+          style="margin-top: 1.5rem; justify-content: center"
+        >
+          <button class="btn btn-primary" id="generateBtn">
+            🚀 Generate Fingerprint
+          </button>
+          <button class="btn btn-secondary" id="testAccuracyBtn">
+            🧪 Run Accuracy Test
+          </button>
+        </div>
+      </div>
+
+      <!-- Accuracy Estimation Card -->
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title">Accuracy Estimation</h2>
+        </div>
+
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+          "
+        >
+          <span>Estimated Accuracy</span>
+          <span id="accuracyPercent">0%</span>
+        </div>
+        <div class="accuracy-meter">
+          <div class="accuracy-fill" id="accuracyFill" style="width: 0%"></div>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-value" id="workingComponents">0/0</div>
+            <div class="stat-label">Working Components</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value" id="blockedComponents">0/0</div>
+            <div class="stat-label">Blocked/Limited</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value" id="firefoxVersion">-</div>
+            <div class="stat-label">Firefox Version</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value" id="protectionLevel">-</div>
+            <div class="stat-label">Protection Level</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Component Test Results -->
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title">Component Test Results</h2>
+        </div>
+
+        <div id="testResults">
+          <p style="text-align: center; color: #64748b">
+            Click "Run Accuracy Test" to see detailed results
+          </p>
+        </div>
+      </div>
+
+      <!-- Recommendations -->
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title">Recommendations</h2>
+        </div>
+
+        <div id="recommendations">
+          <p style="text-align: center; color: #64748b">
+            Run test first to see recommendations
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="../dist/iffingerprint.js"></script>
+    <script src="test-firefox.js"></script>
+  </body>
+</html>

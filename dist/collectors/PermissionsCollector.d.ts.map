@@ -1,0 +1,1 @@
+{"version":3,"file":"PermissionsCollector.d.ts","sourceRoot":"","sources":["../../src/collectors/PermissionsCollector.ts"],"names":[],"mappings":"AAAA;;;GAGG;AAEH,OAAO,EAAE,eAAe,EAAE,MAAM,UAAU,CAAC;AAE3C,qBAAa,oBAAoB;IAC/B,IAAI,SAAiB;IACrB,OAAO,UAAQ;IAEf,OAAO,CAAC,QAAQ,CAAC,eAAe,CAwB9B;IAEI,OAAO,IAAI,OAAO,CAAC,eAAe,CAAC;CAyB1C"}

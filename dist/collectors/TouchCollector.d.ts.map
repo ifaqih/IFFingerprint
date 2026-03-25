@@ -1,0 +1,1 @@
+{"version":3,"file":"TouchCollector.d.ts","sourceRoot":"","sources":["../../src/collectors/TouchCollector.ts"],"names":[],"mappings":"AAAA;;;GAGG;AAEH,OAAO,EAAE,SAAS,EAAE,MAAM,UAAU,CAAC;AAErC,qBAAa,cAAc;IACzB,IAAI,SAAW;IACf,OAAO,UAAQ;IAEf,OAAO,IAAI,SAAS;IAYpB,OAAO,CAAC,uBAAuB;CAsBhC"}

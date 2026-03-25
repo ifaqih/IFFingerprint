@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IFFingerprint - Demo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>🔐 IFFingerprint</h1>
+        <p>Library Fingerprinting Browser dengan Akurasi Tinggi</p>
+      </header>
+
+      <!-- Main Fingerprint Card -->
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title">Your Browser Fingerprint</h2>
+          <span class="card-badge" id="versionBadge">v1.0.0</span>
+        </div>
+
+        <div class="fingerprint-label">
+          Klik tombol di bawah untuk generate fingerprint
+        </div>
+        <div class="fingerprint-display" id="fingerprintDisplay">
+          ????????????????????????????????
+        </div>
+        <div class="copy-hint">📋 Klik fingerprint untuk copy</div>
+
+        <div
+          class="btn-group"
+          style="margin-top: 1.5rem; justify-content: center"
+        >
+          <button class="btn btn-primary" id="generateBtn">
+            🚀 Generate Fingerprint
+          </button>
+          <button class="btn btn-secondary" id="clearCacheBtn">
+            🗑️ Clear Cache
+          </button>
+        </div>
+      </div>
+
+      <!-- Stats Card -->
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title">Statistics</h2>
+          <span class="card-badge success" id="statusBadge">Ready</span>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-value" id="confidenceValue">-</div>
+            <div class="stat-label">Confidence Score</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value" id="componentsValue">-</div>
+            <div class="stat-label">Components</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value" id="durationValue">-</div>
+            <div class="stat-label">Duration (ms)</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value" id="browserValue">-</div>
+            <div class="stat-label">Browser</div>
+          </div>
+        </div>
+
+        <div style="margin-top: 1.5rem">
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              margin-bottom: 0.5rem;
+            "
+          >
+            <span>Confidence Level</span>
+            <span id="confidencePercent">0%</span>
+          </div>
+          <div class="confidence-meter">
+            <div
+              class="confidence-fill"
+              id="confidenceFill"
+              style="width: 0%"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Components Card -->
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title">Fingerprint Components</h2>
+        </div>
+
+        <div class="components-list" id="componentsList">
+          <div class="loading">
+            <div class="spinner"></div>
+            <span>Klik generate untuk melihat components</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Details Card -->
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title">Detailed Information</h2>
+        </div>
+
+        <div class="details-grid" id="detailsGrid">
+          <div class="detail-item">
+            <div class="detail-label">User Agent</div>
+            <div class="detail-value" id="detailUserAgent">-</div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label">Platform</div>
+            <div class="detail-value" id="detailPlatform">-</div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label">Screen Resolution</div>
+            <div class="detail-value" id="detailScreen">-</div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label">Timezone</div>
+            <div class="detail-value" id="detailTimezone">-</div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label">Language</div>
+            <div class="detail-value" id="detailLanguage">-</div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label">CPU Cores</div>
+            <div class="detail-value" id="detailCpu">-</div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label">Memory</div>
+            <div class="detail-value" id="detailMemory">-</div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label">Canvas Hash</div>
+            <div class="detail-value" id="detailCanvas">-</div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label">WebGL Renderer</div>
+            <div class="detail-value" id="detailWebgl">-</div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label">Audio Hash</div>
+            <div class="detail-value" id="detailAudio">-</div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label">Fonts Detected</div>
+            <div class="detail-value" id="detailFonts">-</div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label">Touch Points</div>
+            <div class="detail-value" id="detailTouch">-</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">Copied to clipboard!</div>
+
+    <script src="../dist/iffingerprint.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

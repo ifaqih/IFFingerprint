@@ -1,0 +1,1 @@
+{"version":3,"file":"NavigatorCollector.d.ts","sourceRoot":"","sources":["../../src/collectors/NavigatorCollector.ts"],"names":[],"mappings":"AAAA;;;GAGG;AAEH,OAAO,EAAE,aAAa,EAAE,MAAM,UAAU,CAAC;AAEzC,qBAAa,kBAAkB;IAC7B,IAAI,SAAe;IACnB,OAAO,UAAQ;IAEf,OAAO,IAAI,aAAa;CAyBzB"}

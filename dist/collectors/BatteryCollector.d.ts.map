@@ -1,0 +1,1 @@
+{"version":3,"file":"BatteryCollector.d.ts","sourceRoot":"","sources":["../../src/collectors/BatteryCollector.ts"],"names":[],"mappings":"AAAA;;;;;;GAMG;AAEH,OAAO,EAAE,WAAW,EAAE,MAAM,UAAU,CAAC;AAEvC,qBAAa,gBAAgB;IAC3B,IAAI,SAAa;IACjB,OAAO,UAAQ;IAET,OAAO,IAAI,OAAO,CAAC,WAAW,CAAC;CAwCtC"}

@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Build output (optional - include if you want dist in repo)
+SESSION_CONTEXT.md
+# dist/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Testing
+coverage/
+
+# Temporary files
+*.tmp
+.cache/

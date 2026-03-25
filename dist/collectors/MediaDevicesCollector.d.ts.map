@@ -1,0 +1,1 @@
+{"version":3,"file":"MediaDevicesCollector.d.ts","sourceRoot":"","sources":["../../src/collectors/MediaDevicesCollector.ts"],"names":[],"mappings":"AAAA;;;GAGG;AAEH,OAAO,EAAE,gBAAgB,EAAE,MAAM,UAAU,CAAC;AAG5C,qBAAa,qBAAqB;IAChC,IAAI,SAAkB;IACtB,OAAO,UAAQ;IAET,OAAO,IAAI,OAAO,CAAC,gBAAgB,CAAC;CAsC3C"}

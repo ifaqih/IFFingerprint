@@ -1,0 +1,42 @@
+{
+  "name": "iffingerprint",
+  "version": "1.0.0",
+  "description": "Library fingerprinting browser dengan akurasi tinggi untuk identifikasi pengguna unik",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "demo": "npx http-server demo -p 8080",
+    "clean": "rimraf dist"
+  },
+  "keywords": [
+    "fingerprint",
+    "browser-fingerprint",
+    "device-fingerprint",
+    "tracking",
+    "analytics",
+    "fraud-detection",
+    "javascript",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "rimraf": "^5.0.0"
+  }
+}
